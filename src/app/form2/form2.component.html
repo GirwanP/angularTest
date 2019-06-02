@@ -1,0 +1,21 @@
+<p>
+  form2 works!
+</p>
+<section>
+	<form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+		<input type="text"  class="fortextbox" name="emailid" placeholder="emailid" formControlName="emailid">
+		<br/>
+		<input type="password" class="fortextbox" name="passwd" placeholder="passwordhere" formControlName="passwd">
+		<br/>
+		<input type="submit" class="forsubmit" value="Login"/>
+	</form>
+</section>
+<p>entered email is:{{emailid}}
+</p>
+<p>traditional html form</p>
+<form action="abcd" method=get >
+	<input type="text" name="username"  />
+	<input type="text" name="email" required/>
+	<input type="text" name="college" />
+	<input type="submit" value="submit" />
+</form>
